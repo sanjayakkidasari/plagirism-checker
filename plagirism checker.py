@@ -34,18 +34,18 @@ def calculate_similarity(text1, text2):
 
     return similarity
 
-def check_plagiarism(text1, text2, threshold=0.8):
+def check_plagirism(text1, text2, threshold=0.8):
     similarity = calculate_similarity(text1, text2)
     
     if similarity >= threshold:
-        print("Plagiarism detected! Similarity:", similarity)
+        print("Plagirism detected! Similarity:", similarity)
     else:
-        print("No plagiarism detected. Similarity:", similarity)
+        print("No plagirism detected. Similarity:", similarity)
 
 # Example usage
 text1 = "This is an example sentence."
 text2 = "This is a similar sentence."
 text3 = "This is a different sentence."
 
-check_plagiarism(text1, text2)  # Plagiarism detected! Similarity: 0.629940788348712
-check_plagiarism(text1, text3)  # No plagiarism detected. Similarity: 0.0
+check_plagirism(text1, text2)  # Plagiarism detected! Similarity: 0.629940788348712
+check_plagirism(text1, text3)  # No plagiarism detected. Similarity: 0.0
